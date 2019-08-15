@@ -1,16 +1,15 @@
 import React from "react";
+import { Card } from 'semantic-ui-react';
 
-export default function Card(props) {
+export default function CardMod(props) {
     console.log(props);
     return (
-        <div className="cardFrame">
-            <img src={props.img} alt={props.title}></img>
-            <div className="textFrame">
-                <p className="cardTitle">{props.title}</p>
-                <p className="cardDate">{props.date}</p>
-                <p className="cardText">{props.text}</p>            
-            </div>
-        </div>
-    )
+        <Card
+            image={props.img}
+            header={props.title}
+            meta={props.date}
+            description={props.text}
+        />
+    )  
 }
 

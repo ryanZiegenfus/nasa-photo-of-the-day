@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import Card from "./Card";
+import CardMod from "./Card";
 
-export default function APOD() {
+export default function APOD(props) {
     const [photoState, setPhotoState] = useState('');
     useEffect(() => {
         axios
@@ -15,7 +15,7 @@ export default function APOD() {
     if (!photoState.url) return <h3>Loading...</h3>;
     return (
         <div>
-            <Card img={photoState.url} title={photoState.title} date={photoState.date} text={photoState.explanation}/>
+            <CardMod img={photoState.url} title={photoState.title} date={photoState.date} text={photoState.explanation}/>
         </div>
     );
 }
