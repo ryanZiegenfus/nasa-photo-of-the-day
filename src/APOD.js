@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import Card from "./Card"
+import Card from "./Card";
 
 export default function APOD() {
     const [photoState, setPhotoState] = useState('');
-
     useEffect(() => {
         axios
             .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
