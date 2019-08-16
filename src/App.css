@@ -1,12 +1,12 @@
 .App {
-  text-align: center;
-  background-image: url("https://apod.nasa.gov/apod/image/1801/LMC_RGBNB-Don-Josep5-Cc1024.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  max-height: 100vh;
-  width: 100vw;
-}
+    text-align: center;
+    background-image: url("https://apod.nasa.gov/apod/image/1801/LMC_RGBNB-Don-Josep5-Cc1024.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+  }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -27,12 +27,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-.HeaderBar {
-  background: lightgrey;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
 }
 
 @keyframes App-logo-spin {
