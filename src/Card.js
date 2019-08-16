@@ -9,6 +9,7 @@ export default function CardMod(props) {
             header={props.title}
             meta={props.date}
             description={props.text}
+            style={{margin: "0 auto"}}
         />
     )  
 }

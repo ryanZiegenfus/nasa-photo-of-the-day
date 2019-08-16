@@ -1,22 +1,32 @@
-import React, {useState, useEffect} from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import  React  from  'react';
+import  Carousel  from  'semantic-ui-carousel-react';
+import { Image, Button } from  'semantic-ui-react'
+import APOD from "APOD.js";
 
-export default function CarouselMod(props) {
-    render() {
-        return (
-            <Carousel>
-
-
-
-
-
-
-
-
-
-            </Carousel>
-        )
-    };
+const  CarouselMod  = () => {
+	let  elements  = [
+		{
+			render:()=>{
+				return <Button  fluid>1111111</Button>
+			}
+		},
+		{
+			render:()=>{
+				return <Button  fluid>2222222</Button>
+			}
+	    },
+	]
+	return (
+		<div>
+			<Carousel
+				elements  =  {null}
+				duration  ={3000}
+				animation  ='slide left'
+				showNextPrev  =  {false}
+				showIndicators  ={true}
+			/>
+		</div>
+	)
 
 }
+export  default  CarouselMod;

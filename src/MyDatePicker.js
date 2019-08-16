@@ -9,8 +9,8 @@ export function DateMod() {
 
 
     return (
-      <div>
-        <MuiPickersUtilsProvider utils={DateFnsUtils}>
+      <div className="HeaderBar">
+        <MuiPickersUtilsProvider utils={DateFnsUtils} >
           <DatePicker value={selectedDate} onChange={handleDateChange} />
         </MuiPickersUtilsProvider>
       </div>
