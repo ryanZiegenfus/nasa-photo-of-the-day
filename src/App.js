@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
+import {DateMod} from "./MyDatePicker";
+import APOD from "./APOD";
+import {FooterMod} from "./Footer"
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <DateMod />
+      <APOD />
+      <FooterMod />
     </div>
   );
 }
